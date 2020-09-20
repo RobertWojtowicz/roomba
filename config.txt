@@ -75,5 +75,5 @@ dtparam=act_led_activelow=on
 # Disable bluetooth on the Pi Zero
 dtoverlay=pi3-disable-bt
 
-# Switch off LED on boot
+# Switch off IR LED on boot
 gpio=18=op,dl
