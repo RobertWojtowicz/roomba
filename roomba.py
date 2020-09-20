@@ -1,9 +1,13 @@
+# *********
+# RPiRoomba v1.0
+# *********
+
 import create2api
 import RPi.GPIO as GPIO
 from time import sleep
 from sys import argv
 
-#Driving control:
+# Driving control:
 def forward():
     bot = create2api.Create2()
     bot.drive_straight(200) #Normal speed of Roomba is 280
@@ -28,7 +32,7 @@ def backward():
     bot = create2api.Create2()
     bot.drive_straight(-200) #Normal speed of Roomba is 280
 
-#Driving mode:
+# Driving mode:
 def open():
     bot = create2api.Create2()
     bot.start()
@@ -38,7 +42,7 @@ def close():
     bot = create2api.Create2()
     bot.stop()
 
-#Camera options:
+# Camera options:
 def camera_0():
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(23, GPIO.OUT)
@@ -94,7 +98,7 @@ def led_off():
 	GPIO.setup(18, GPIO.OUT)
 	GPIO.output(18, 0)
 
-#Basic controls:
+# Basic controls:
 def wake_up():
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(23, GPIO.OUT)
