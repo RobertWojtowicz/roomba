@@ -13,8 +13,8 @@ This project is based on the following projects:
 - upload system to the microSD card, e.g. using Win32 Disk Imager, all you need is a 4 GB microSD card with UHS-1 speed class;
 - to enable ssh create blank text file called “ssh” wtihout txt extension on the boot partition;
 - to enable WiFi connection create text file "wpa_supplicant.conf" on the boot partition based on an example from this repository;
-- on the boot partition replace or edit config.txt file based on an example from this repository;
-- to disable HDMI (to reduce the power consumption) you must replace or edit rc.local file based on an example from this repository.
+- on the boot partition replace or edit "config.txt" file based on an example from this repository;
+- to disable HDMI (to reduce the power consumption) you must replace or edit "rc.local" file based on an example from this repository.
 
 ## 5. Installing RPi-CAM-Web-Interface
 To install RPi-CAM-Web-Interface, run the following commands:
@@ -26,3 +26,11 @@ To install RPi-CAM-Web-Interface, run the following commands:
 - when the installation is complete you can delete folder, rm -rf RPi_Cam_Web_Interface.
 
 ## 6. Configuring scripts
+Create a roomba folder in /var/www directory and then copy the files, e.g. using WinSCP:
+- command.php;
+- config.json;
+- create2api.py;
+- jquery-3.5.1.min.js;
+- roomba.py;
+- submit.js;
+- in /var/www directory, you should replace index.html from this repository.
