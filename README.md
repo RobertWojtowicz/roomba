@@ -1,4 +1,4 @@
-# Roomba
+# RPiRoomba
 
 ## 1. Introduction
 This project is based on the following projects:
