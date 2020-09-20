@@ -32,5 +32,5 @@ Create a roomba folder in /var/www directory and then copy the files, e.g. using
 - create2api.py;
 - jquery-3.5.1.min.js;
 - roomba.py;
-- submit.js.
-In /var/www directory, you should replace index.html from this repository.
+- submit.js;
+- in /var/www directory, you should replace index.html from this repository.
