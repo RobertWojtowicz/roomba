@@ -2,14 +2,10 @@
 #
 # rc.local
 #
-# This script is executed at the end of each multiuser runlevel.
-# value on error.
+# *********
+# RPiRoomba v1.0
+# *********
 #
-# In order to enable or disable this script just change the execution
-# bits.
-#
-# By default this script does nothing.
-
 # Get the current video output type and strip away the unimportant bits
 video="$(tvservice -s | sed "s/^.*\[\([^ ]*\) .*$/\1/" )"
 
