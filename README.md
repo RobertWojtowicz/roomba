@@ -23,6 +23,6 @@ To install RPi-CAM-Web-Interface, run the following commands:
 - cd RPi_Cam_Web_Interface;
 - ./install.sh;
 - in the configuration menu, clear the "xCam subfolder" option, add the user in "xUser:" admin and the password "xPassword:" and select OK;
-- rm -rf RPi_Cam_Web_Interface;
+- when the installation is complete you can delete folder, rm -rf RPi_Cam_Web_Interface;
 
 ## 6. Configuring scripts
