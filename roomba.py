@@ -1,3 +1,7 @@
+# *********
+# RPiRoomba v1.0
+# *********
+
 import create2api
 import RPi.GPIO as GPIO
 from time import sleep
