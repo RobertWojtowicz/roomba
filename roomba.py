@@ -1,7 +1,3 @@
-# *********
-# RPiRoomba v1.0
-# *********
-
 import create2api
 import RPi.GPIO as GPIO
 from time import sleep
@@ -45,10 +41,10 @@ def close():
 #Camera options:
 def camera_0():
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(18, GPIO.OUT)
-    servo = GPIO.PWM(18, 50)
+    GPIO.setup(23, GPIO.OUT)
+    servo = GPIO.PWM(23, 50)
     servo.start(0)
-    servo.ChangeDutyCycle(2 + (90 / 18))
+    servo.ChangeDutyCycle(2 + (90 / 23))
     sleep(0.5)
     servo.ChangeDutyCycle(0)
     servo.stop()
@@ -56,10 +52,10 @@ def camera_0():
 
 def camera_30():
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(18, GPIO.OUT)
-    servo = GPIO.PWM(18, 50)
+    GPIO.setup(23, GPIO.OUT)
+    servo = GPIO.PWM(23, 50)
     servo.start(0)
-    servo.ChangeDutyCycle(2 + (60 / 18))
+    servo.ChangeDutyCycle(2 + (60 / 23))
     sleep(0.5)
     servo.ChangeDutyCycle(0)
     servo.stop()
@@ -67,10 +63,10 @@ def camera_30():
 
 def camera_60():
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(18, GPIO.OUT)
-    servo = GPIO.PWM(18, 50)
+    GPIO.setup(23, GPIO.OUT)
+    servo = GPIO.PWM(23, 50)
     servo.start(0)
-    servo.ChangeDutyCycle(2 + (30 / 18))
+    servo.ChangeDutyCycle(2 + (30 / 23))
     sleep(0.5)
     servo.ChangeDutyCycle(0)
     servo.stop()
@@ -78,14 +74,25 @@ def camera_60():
 
 def camera_90():
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(18, GPIO.OUT)
-    servo = GPIO.PWM(18, 50)
+    GPIO.setup(23, GPIO.OUT)
+    servo = GPIO.PWM(23, 50)
     servo.start(0)
-    servo.ChangeDutyCycle(2 + (0 / 18))
+    servo.ChangeDutyCycle(2 + (0 / 23))
     sleep(0.5)
     servo.ChangeDutyCycle(0)
     servo.stop()
     GPIO.cleanup()
+	
+def led_on():
+	GPIO.setwarnings(False)
+	GPIO.setmode(GPIO.BCM)
+	GPIO.setup(18, GPIO.OUT)
+	GPIO.cleanup()
+
+def led_off():
+	GPIO.setmode(GPIO.BCM)
+	GPIO.setup(18, GPIO.OUT)
+	GPIO.output(18, 0)
 
 #Basic controls:
 def wake_up():
