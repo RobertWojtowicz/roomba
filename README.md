@@ -7,6 +7,10 @@ This project is based on the following projects:
 
 ## 2. How does this work?
 ## 3. Build hardware
+- create your own PCB according to the project files: roomba_led_pcb_v1.sch, roomba_led_pcb_v1.brd, roomba_main_pcb_v1.sh, roomba_main_pcb_v1.brd;
+- prepare the aluminium housing - heat sink, similar to the picture;
+- the hinges come from the elements of the electric cube;
+- metric screws with a diameter of 2 mm were used to connect the parts;
 
 ## 4. Preparing Linux system
 - download Raspberry Pi OS (32-bit) Lite system image: https://downloads.raspberrypi.org/raspios_lite_armhf_latest;
