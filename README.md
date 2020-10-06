@@ -16,10 +16,10 @@ The following parts are required:
 - 1x Camera adaptor from official case Raspberry Pi, version Zero;
 - Modules: 1x DC/DC step-down MP1584EN, 1x Raspberry Pi Zero W V1.1, 1x Raspberry Pi NoIR Camera V2, 1x LED driver PT4115;
 - 1x Micro Servo TowerPro MG90S;
-- 1x 3 W High Power LED Chip IR 850 Nm;
-- 1x Resettable polymeric fuse 500 mA;
-- Resistors SMD 1206: 1x 15 Ohm, 1x 120 Ohm, 1x 390 Ohm, 1x 1 kOhm
-- 3x Zener diode 3,3 V;
+- 1x SMD 1206 3W LED Chip IR 850 Nm;
+- 1x SMD 1206 resettable polymeric fuse 500 mA;
+- SMD 1206 resistors: 1x 15 Ohm, 1x 120 Ohm, 1x 390 Ohm, 1x 1 kOhm
+- 3x SMD 1206 zener diode 3,3 V;
 - 1x 40 pin 2.54 mm single 20 mm long header male;
 - 1x 40 pin 2.54 mm single in line header male right angle.
 
