@@ -20,8 +20,8 @@ The following parts are required:
 - 1x SMD 1206 resettable polymeric fuse 500 mA;
 - 1x SMD 1206 resistors: 15 Ohm, 120 Ohm, 390 Ohm, 1 kOhm;
 - 3x SMD 1206 zener diode 3.3 V;
-- 1x 40 pin 2.54 mm single in line 20 mm long header male;
-- 1x 40 pin 2.54 mm single in line header male right angle.
+- 1x 40 pin, 2.54 mm, single in line, 20 mm long, header male;
+- 1x 40 pin, 2.54 mm, single in line, right angle, header male.
 
 ## 4. Preparing Linux system
 - download Raspberry Pi OS (32-bit) Lite system image: https://downloads.raspberrypi.org/raspios_lite_armhf_latest;
