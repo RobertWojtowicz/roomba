@@ -14,9 +14,9 @@ This project is based on the following projects:
 
 The following parts are required:
 - Modules: 1x DC/DC step-down MP1584EN, 1x Raspberry Pi Zero W V1.1, 1x Raspberry Pi NoIR Camera V2, 1x LED driver PT4115;
-- 1x Camera adaptor from official case Raspberry Pi, version Zero;
+- 1x Camera adaptor (cable) from official case Raspberry Pi Zero;
 - 1x Micro servo TowerPro MG90S;
-- 1x SMD 1206 high power LED chip 3W IR 850 Nm;
+- 1x SMD 1206 high power LED chip, 3W IR 850 Nm;
 - 1x SMD 1206 resettable polymeric fuse 500 mA;
 - 1x SMD 1206 resistors: 15 Ohm, 120 Ohm, 390 Ohm, 1 kOhm;
 - 3x SMD 1206 zener diode 3.3 V;
