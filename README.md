@@ -7,6 +7,21 @@ This project is based on the following projects:
 
 ## 2. How does this work?
 ## 3. Build hardware
+- create your own PCB according to the project files: roomba_led_pcb_v1.sch, roomba_led_pcb_v1.brd, roomba_main_pcb_v1.sh, roomba_main_pcb_v1.brd;
+- prepare the aluminium housing - heat sink, similar to the picture;
+- the hinges come from the elements of the electric cube;
+- metric screws with a diameter of 2 mm were used to connect the parts;
+
+The following parts are required:
+- Modules: 1x DC/DC step-down MP1584EN, 1x Raspberry Pi Zero W V1.1, 1x Raspberry Pi NoIR Camera V2, 1x LED driver PT4115;
+- 1x Camera adaptor (cable) from official case Raspberry Pi Zero;
+- 1x Micro servo TowerPro MG90S;
+- 1x SMD 1206 high power LED chip, 3W IR 850 Nm;
+- 1x SMD 1206 resettable polymeric fuse 500 mA;
+- 1x SMD 1206 resistors: 15 Ohm, 120 Ohm, 390 Ohm, 1 kOhm;
+- 3x SMD 1206 zener diode 3.3 V;
+- 1x 40 pin, 2.54 mm, single in line, 20 mm long, header male;
+- 1x 40 pin, 2.54 mm, single in line, right angle, header male.
 
 ## 4. Preparing Linux system
 - download Raspberry Pi OS (32-bit) Lite system image: https://downloads.raspberrypi.org/raspios_lite_armhf_latest;
