@@ -29,7 +29,8 @@ The following parts are required:
 - to enable ssh create blank text file called “ssh” wtihout txt extension on the boot partition;
 - to enable WiFi connection create text file "wpa_supplicant.conf" on the boot partition based on an example from this repository;
 - on the boot partition replace or edit "config.txt" file based on an example from this repository;
-- to disable HDMI (to reduce the power consumption) you must replace or edit "rc.local" file based on an example from this repository.
+- to disable HDMI (to reduce the power consumption) you must replace or edit "rc.local" file based on an example from this repository;
+- install modules: sudo apt-get install python-pip, sudo pip install pyserial.
 
 ## 5. Installing RPi-CAM-Web-Interface
 To install RPi-CAM-Web-Interface, run the following commands:
@@ -49,5 +50,5 @@ Create a roomba folder in /var/www directory and then copy the files, e.g. using
 - roomba.py;
 - submit.js;
 - in /var/www directory, you should replace index.html from this repository;
-- sudo apt-get install python-pip;
-- sudo pip install pyserial.
+- Grant permissions for user-data: sudo usermod -a -G gpio www-data, sudo usermod -a -G dialout www-data.
+
