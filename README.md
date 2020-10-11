@@ -50,5 +50,5 @@ Create a roomba folder in /var/www directory and then copy the files, e.g. using
 - roomba.py;
 - submit.js;
 - in /var/www directory, you should replace index.html from this repository;
-- Grant permissions for user-data: sudo usermod -a -G gpio www-data, sudo usermod -a -G dialout www-data.
+- grant permissions for user-data: sudo usermod -a -G gpio www-data, sudo usermod -a -G dialout www-data.
 
