@@ -45,10 +45,10 @@ def close():
 # Camera options:
 def camera_0():
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(23, GPIO.OUT)
-    servo = GPIO.PWM(23, 50)
+    GPIO.setup(24, GPIO.OUT)
+    servo = GPIO.PWM(24, 50)
     servo.start(0)
-    servo.ChangeDutyCycle(2 + (90 / 23))
+    servo.ChangeDutyCycle(2 + (90 / 18))
     sleep(0.5)
     servo.ChangeDutyCycle(0)
     servo.stop()
@@ -56,10 +56,10 @@ def camera_0():
 
 def camera_30():
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(23, GPIO.OUT)
-    servo = GPIO.PWM(23, 50)
+    GPIO.setup(24, GPIO.OUT)
+    servo = GPIO.PWM(24, 50)
     servo.start(0)
-    servo.ChangeDutyCycle(2 + (60 / 23))
+    servo.ChangeDutyCycle(2 + (60 / 18))
     sleep(0.5)
     servo.ChangeDutyCycle(0)
     servo.stop()
@@ -67,10 +67,10 @@ def camera_30():
 
 def camera_60():
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(23, GPIO.OUT)
-    servo = GPIO.PWM(23, 50)
+    GPIO.setup(24, GPIO.OUT)
+    servo = GPIO.PWM(24, 50)
     servo.start(0)
-    servo.ChangeDutyCycle(2 + (30 / 23))
+    servo.ChangeDutyCycle(2 + (30 / 18))
     sleep(0.5)
     servo.ChangeDutyCycle(0)
     servo.stop()
@@ -78,10 +78,10 @@ def camera_60():
 
 def camera_90():
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(23, GPIO.OUT)
-    servo = GPIO.PWM(23, 50)
+    GPIO.setup(24, GPIO.OUT)
+    servo = GPIO.PWM(24, 50)
     servo.start(0)
-    servo.ChangeDutyCycle(2 + (0 / 23))
+    servo.ChangeDutyCycle(2 + (0 / 18))
     sleep(0.5)
     servo.ChangeDutyCycle(0)
     servo.stop()
