@@ -48,4 +48,6 @@ Create a roomba folder in /var/www directory and then copy the files, e.g. using
 - jquery-3.5.1.min.js;
 - roomba.py;
 - submit.js;
-- in /var/www directory, you should replace index.html from this repository.
+- in /var/www directory, you should replace index.html from this repository;
+- sudo apt-get install python-pip;
+- sudo pip install pyserial.
