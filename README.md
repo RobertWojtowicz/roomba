@@ -6,14 +6,22 @@ This project is based on the following projects:
 - https://github.com/silvanmelchior/RPi_Cam_Web_Interface
 
 ## 2. How does this work?
-
+- the project applies only to Roomba models that have 7-pin Mini-DIN serial port (iRobot Create Intereface);
+- please note that different Roomba models have in different places this port, the PCB was designed for the Roomba 620;
+- the port was connected through a logical level converter together with Raspberry Pi Zero W;
+- Raspberry Pi Zero W was connected to the camera and LED driver and servo, as in the images below:
+![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/09_roomba_pinout.png)
+![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/10_rpi_pinout.png)
+- the project allows you to remotely control Roomba (via WiFi), watch live video and record, take pictures;
+- it is possible to run a cleaning schedule, which Roomba 620 does not have;
+- infrared high power LED chip allows visibility of the camera at night.
 
 ## 3. Build hardware
 - create your own PCB according to the project files: roomba_led_pcb_v1.sch, roomba_led_pcb_v1.brd, roomba_main_pcb_v1.sh, roomba_main_pcb_v1.brd from this repository (files location: rpiroomba/pcb/), example of finished PCBs below:
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/01_main_PCB.jpg)
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/02_LED_PCB.jpg)
-- prepare the aluminium housing - heat sink for CPU Raspberry Pi and high power LED chip, similar to the picture (dimensions approx: 36 mm x 65 mm):
-- add a thermal pad under the high power LED chip and the CPU Raspberry Pi to dissipate the heat to the aluminium case;
+- prepare the aluminium housing - heat sink for CPU Raspberry Pi Zero W and high power LED chip, similar to the picture (dimensions approx: 36 mm x 65 mm):
+- add a thermal pad under the high power LED chip and the CPU Raspberry Pi Zero W to dissipate the heat to the aluminium case;
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/04_wiring_RPI_CAM.jpg)
 - the hinges come from the elements of the electric cube;
 - metric screws with a diameter of 2 mm were used to connect the parts;
