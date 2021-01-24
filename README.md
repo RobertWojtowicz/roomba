@@ -14,7 +14,8 @@ This project is based on the following projects:
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/10_rpi_pinout.png)
 - the project allows you to remotely control Roomba (via WiFi), watch live video and record, take pictures;
 - it is possible to run a cleaning schedule, which Roomba 620 does not have;
-- infrared high power LED chip allows visibility of the camera at night.
+- infrared high power LED chip allows visibility of the camera at night;
+- it is possible to adjust the camera position angle (0°, 30°, 60°, 90°).
 
 ## 3. Build hardware
 - create your own PCB according to the project files: roomba_led_pcb_v1.sch, roomba_led_pcb_v1.brd, roomba_main_pcb_v1.sh, roomba_main_pcb_v1.brd from this repository (files location: rpiroomba/pcb/), example of finished PCBs below:
@@ -46,7 +47,7 @@ The following parts are required:
 - upload system to the microSD card, e.g. using Win32 Disk Imager, all you need is a 4 GB microSD card with UHS-1 speed class;
 - to enable ssh create blank text file called “ssh” wtihout txt extension on the boot partition;
 - to enable WiFi connection create text file "wpa_supplicant.conf" on the boot partition based on an example from this repository (file location: rpiroomba/rpi/boot/);
-- on the boot partition replace or edit "config.txt" file based on an example from this repository (file location: /rpi/boot/;
+- on the boot partition replace or edit "config.txt" file based on an example from this repository (file location: /rpi/boot/);
 - to disable HDMI (to reduce the power consumption) you must replace or edit "rc.local" file based on an example from this repository (file location: rpiroomba/rpi/etc/);
 - install modules: sudo apt-get install python-pip, sudo pip install pyserial.
 
@@ -62,13 +63,20 @@ To install RPi-CAM-Web-Interface, run the following commands:
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/08_roomba_RPI_Cam.png)
 
 ## 6. Configuring scripts
-Create a roomba folder in /var/www directory and then copy the files, e.g. using WinSCP:
+Create a roomba folder in /var/www directory and then copy the files, e.g. using WinSCP from this repository (file location: /rpi/www/roomba):
 - command.php;
 - config.json;
 - create2api.py;
 - jquery-3.5.1.min.js;
 - roomba.py;
 - submit.js;
-- in /var/www directory, you should replace index.html from this repository;
+- in /var/www directory, you should replace index.html from this repository (file location: /rpi/www/);
 - grant permissions for user-data: sudo usermod -a -G gpio www-data, sudo usermod -a -G dialout www-data.
 
+## 7. Some final project photos
+- Camera down:
+![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/05_Finished_Roomba.jpg)
+- Current limit adjustment on LED driver:
+![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/06_Finished_Roomba.jpg)
+- Camera up:
+![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/07_Finished_Roomba.jpg)
