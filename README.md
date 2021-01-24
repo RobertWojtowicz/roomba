@@ -63,13 +63,7 @@ To install RPi-CAM-Web-Interface, run the following commands:
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/08_roomba_RPI_Cam.png)
 
 ## 6. Configuring scripts
-Create a roomba folder in /var/www directory and then copy the files, e.g. using WinSCP from this repository (file location: /rpi/www/roomba):
-- command.php;
-- config.json;
-- create2api.py;
-- jquery-3.5.1.min.js;
-- roomba.py;
-- submit.js;
+- create a roomba folder in /var/www directory and then copy the files, e.g. using WinSCP from this repository (file location: /rpi/www/roomba): command.php, config.json, create2api.py, jquery-3.5.1.min.js, roomba.py, submit.js;
 - in /var/www directory, you should replace index.html from this repository (file location: /rpi/www/);
 - grant permissions for user-data: sudo usermod -a -G gpio www-data, sudo usermod -a -G dialout www-data.
 
