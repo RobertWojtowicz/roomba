@@ -32,7 +32,7 @@ This project is based on the following projects:
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/03_RPI_PCB_isolation.jpg)
 
 The following parts are required:
-- Modules: 1x DC/DC step-down MP1584EN, 1x Raspberry Pi Zero W V1.1, 1x Raspberry Pi NoIR Camera V2, 1x LED driver PT4115:
+- Modules: 1x DC/DC step-down MP1584EN, 1x Raspberry Pi Zero W V1.1, 1x Raspberry Pi NoIR Camera V2, 1x LED driver PT4115:<br>
 ![alt text](http://www.dareltek.pl/pliki/P4115adj2b.jpg)
 - 1x Camera adaptor (cable) from official case Raspberry Pi Zero;
 - 1x Micro servo TowerPro MG90S;
