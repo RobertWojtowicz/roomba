@@ -285,11 +285,11 @@
       <script src="js/style_minified.js"></script>
       <script src="js/script.js"></script>
       <script src="js/pipan.js"></script>
-
+	  
 <!--Start modification for Roomba part 1-->
       <script src="roomba/jquery-3.5.1.min.js"></script>
 	  <script src="roomba/submit.js"></script>
-<!--End modification for Roomba part 1-->	  
+<!--End modification for Roomba part 1-->		  
 
    </head>
    <body onload="setTimeout('init(<?php echo "$mjpegmode, $video_fps, $divider" ?>);', 100);">
@@ -320,9 +320,10 @@
          <?php  if($config['motion_external'] == '1'): ?><a href="motion.php" class="btn btn-default" <?php getdisplayStyle('settings', $userLevel); ?>>Edit motion settings</a>&nbsp;&nbsp;<?php endif; ?>
          <a href="schedule.php" class="btn btn-default" <?php getdisplayStyle('settings', $userLevel); ?>>Edit schedule settings</a>
       </div>
+    
       <div class="container-fluid text-center">
          <div class="panel-group" id="accordion" <?php getdisplayStyle('settings', $userLevel); ?> >
-
+		 
 <!--Start modification for Roomba part 2-->
             <div class="panel panel-default">
                <div class="panel-heading">
@@ -386,7 +387,7 @@
                   </div>				  
                </div>
             </div>
-<!--End modification for Roomba part 2-->
+<!--End modification for Roomba part 2-->		 
 
             <div class="panel panel-default">
                <div class="panel-heading">
@@ -401,17 +402,18 @@
                            <td>Resolutions:</td>
                            <td>Load Preset: <select onchange="set_preset(this.value)">
 								<?php if(!file_exists('uPresets.html')) : ?>
-                                 <option value="1920 1080 25 25 2592 1944">Select option...</option>
-                                 <option value="1920 1080 25 25 2592 1944">Full HD 1080p 16:9</option>
-                                 <option value="1280 0720 25 25 2592 1944">HD-ready 720p 16:9</option>
-                                 <option value="1296 972 25 25 2592 1944">Max View 972p 4:3</option>
-                                 <option value="768 576 25 25 2592 1944">SD TV 576p 4:3</option>
-                                 <option value="1920 1080 01 30 2592 1944">Full HD Timelapse (x30) 1080p 16:9</option>
+                                 <option value="1920 1080 25 25 2592 1944 1">Select option...</option>
+                                 <option value="1920 1080 25 25 2592 1944 1">Full HD 1080p 16:9</option>
+                                 <option value="1280 0720 25 25 2592 1944 1">HD-ready 720p 16:9</option>
+                                 <option value="1296 972 25 25 2592 1944 1">Max View 972p 4:3</option>
+                                 <option value="768 576 25 25 2592 1944 1">SD TV 576p 4:3</option>
+                                 <option value="1920 1080 01 30 2592 1944 1">Full HD Timelapse (x30) 1080p 16:9</option>
 								 <?php else : include 'uPresets.html'; endif; ?>
                               </select><br>
                               Custom Values:<br>
                               Video res: <?php makeInput('video_width', 4, null, 'number'); ?>x<?php makeInput('video_height', 4, null, 'number'); ?>px<br>
                               Video fps: <?php makeInput('video_fps', 3, null, 'number'); ?>recording, <?php makeInput('MP4Box_fps', 3, null, 'number'); ?>boxing<br>
+                              FPS divider: <?php makeInput('fps_divider', 3, null, 'number'); ?><br>
                               Image res: <?php makeInput('image_width', 4, null, 'number'); ?>x<?php makeInput('image_height', 4, null, 'number'); ?>px<br>
                               <input type="button" value="OK" onclick="set_res();">
                            </td>
