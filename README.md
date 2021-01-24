@@ -27,6 +27,7 @@ This project is based on the following projects:
 - the hinges come from the elements of the electric cube;
 - metric screws with a diameter of 2 mm were used to connect the parts;
 - reduce the current on the LED driver from 700 mA to 230 mA (too high power causes unreadable view);
+- set a voltage of 5V on the step-down DC/DC module;
 - isolate the Raspberry Pi and camera pins from accidental short circuits, as shown in the following picture:
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/03_RPI_PCB_isolation.jpg)
 
