@@ -18,7 +18,7 @@ This project is based on the following projects:
 - it is possible to adjust the camera position angle (0°, 30°, 60°, 90°).
 
 ## 3. Build hardware
-- create your own PCB according to the project files: roomba_led_pcb_v1.sch, roomba_led_pcb_v1.brd, roomba_main_pcb_v1.sh, roomba_main_pcb_v1.brd from this repository (files location: rpiroomba/pcb/), example of finished PCBs below:
+- create your own PCB v1.1 according to the project files: roomba_led_pcb_v1.sch, roomba_led_pcb_v1.brd, roomba_main_pcb_v1.sh, roomba_main_pcb_v1.brd from this repository (files location: rpiroomba/pcb/), example of finished PCBs v1.0 below:
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/01_main_PCB.jpg)
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/02_LED_PCB.jpg)
 - prepare the aluminium housing - heat sink for CPU Raspberry Pi Zero W and high power LED chip, similar to the picture (dimensions approx: 36 mm x 65 mm):
@@ -42,7 +42,7 @@ The following parts are required:
 - 1x 40 pin, 2.54 mm, single in line, 20 mm long, header male;
 - 1x 40 pin, 2.54 mm, single in line, right angle, header male.
 
-## 4. Preparing Linux system (tested on current kernel 5.4.83+ )
+## 4. Preparing Linux system (tested on current kernel 5.4.83+)
 - download Raspberry Pi OS (32-bit) Lite system image: https://downloads.raspberrypi.org/raspios_lite_armhf_latest;
 - upload system to the microSD card, e.g. using Win32 Disk Imager, all you need is a 4 GB microSD card with UHS-1 speed class;
 - to enable ssh create blank text file called “ssh” wtihout txt extension on the boot partition;
