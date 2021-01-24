@@ -75,7 +75,7 @@ Create a roomba folder in /var/www directory and then copy the files, e.g. using
 
 ## 7. Creating a cleaning schedule
 - Roomba 620 does not have its own cleaning schedule, but you can add in cron;
-- For example, Monday, Wednesday, Friday at 12:00) you should edit the file using the command crontab -e: 
+- For example, Monday, Wednesday, Friday at 12:00) you should edit the file using the command crontab -e:<br/> 
 00 12 * * 1 python /var/www/roomba/start.py<br/>
 00 12 * * 3 python /var/www/roomba/start.py<br/>
 00 12 * * 5 python /var/www/roomba/start.py
