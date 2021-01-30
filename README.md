@@ -30,6 +30,8 @@ This project is based on the following projects:
 - set a voltage of 5V on the step-down DC/DC module;
 - isolate the Raspberry Pi and camera pins from accidental short circuits, as shown in the following picture:
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/03_RPI_PCB_isolation.jpg)
+- isolate in half the IR sensor as shown in the following picture (docking station search algorithm fails when Raspberry Pi Zero W module is installed):
+![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/011_IR_sensor_Roomba.jpg)
 
 The following parts are required:
 - Modules: 1x DC/DC step-down MP1584EN, 1x Raspberry Pi Zero W V1.1, 1x Raspberry Pi NoIR Camera V2, 1x LED driver PT4115:<br>
@@ -76,9 +78,9 @@ To install RPi-CAM-Web-Interface, run the following commands:
 00 12 * * 5 python /var/www/roomba/roomba.py clean
 
 ## 8. Some final project photos
-- Camera down:
+- Camera down (position angle 0°):
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/05_Finished_Roomba.jpg)
 - Current limit adjustment on LED driver:
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/06_Finished_Roomba.jpg)
-- Camera up:
+- Camera up (position angle 90°):
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/07_Finished_Roomba.jpg)
