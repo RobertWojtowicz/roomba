@@ -30,7 +30,7 @@ def right():
 
 def backward():
     bot = create2api.Create2()
-    bot.drive_straight(-200) #Normal speed of Roomba is 280
+    bot.drive_straight(-200) #Normal speed of Roomba is -280
 
 # Driving mode:
 def open():
