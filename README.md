@@ -30,7 +30,7 @@ This project is based on the following projects:
 - set a voltage of 5V on the step-down DC/DC module;
 - isolate the Raspberry Pi and camera pins from accidental short circuits, as shown in the following picture:
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/03_RPI_PCB_isolation.jpg)
-- isolate in half the IR sensor as shown in the following picture (docking station search algorithm fails when Raspberry Pi Zero W module is installed):
+- isolate in half the IR sensor on Roomba as shown in the following picture (otherwise docking station search algorithm fails when Raspberry Pi Zero W module is installed):
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/11_IR_sensor_Roomba.jpg)
 
 The following parts are required:
