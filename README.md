@@ -32,7 +32,7 @@ This project is based on the following projects:
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/03_RPI_PCB_isolation.jpg)
 
 The following parts are required:
-- Modules: 1x DC/DC step-down MP1584EN, 1x Raspberry Pi Zero W V1.1, 1x Raspberry Pi NoIR Camera V2, 1x LED driver PT4115:
+- Modules: 1x DC/DC step-down MP1584EN, 1x Raspberry Pi Zero W V1.1, 1x Raspberry Pi NoIR Camera V2, 1x LED driver PT4115:<br>
 ![alt text](http://www.dareltek.pl/pliki/P4115adj2b.jpg)
 - 1x Camera adaptor (cable) from official case Raspberry Pi Zero;
 - 1x Micro servo TowerPro MG90S;
@@ -71,9 +71,9 @@ To install RPi-CAM-Web-Interface, run the following commands:
 ## 7. Creating a cleaning schedule
 - Roomba 620 does not have its own cleaning schedule, but you can add in cron;
 - for example, Monday, Wednesday, Friday at 12:00 you should edit the file using the command crontab -e:<br/> 
-00 12 * * 1 python /var/www/roomba/start.py<br/>
-00 12 * * 3 python /var/www/roomba/start.py<br/>
-00 12 * * 5 python /var/www/roomba/start.py
+00 12 * * 1 python /var/www/roomba/roomba.py clean<br/>
+00 12 * * 3 python /var/www/roomba/roomba.py clean<br/>
+00 12 * * 5 python /var/www/roomba/roomba.py clean
 
 ## 8. Some final project photos
 - Camera down:
