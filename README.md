@@ -8,6 +8,7 @@ This project is based on the following projects:
 ## 2. How does this work?
 - the project applies only to Roomba models that have 7-pin Mini-DIN serial port (iRobot Create Intereface);
 - please note that different Roomba models have in different places this port, the PCB was designed for the Roomba 620;
+- in case of Roomba 620 you have to cut a hole in the bezel to get to Mini-DIN serial port (the bezel is replaceable, in different colors ;-) to remove the bezel follow the instructions in this project: https://github.com/joric/joirc;
 - the port was connected through a logical level converter together with Raspberry Pi Zero W;
 - Raspberry Pi Zero W was connected to the camera, LED driver and micro servo, as in the images below:
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/09_roomba_pinout.png)
