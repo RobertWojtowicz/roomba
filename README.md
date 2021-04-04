@@ -62,7 +62,8 @@ To install RPi-CAM-Web-Interface, run the following commands:
 - cd RPi_Cam_Web_Interface;
 - ./install.sh;
 - in the configuration menu, clear the "xCam subfolder" option, add the user in "xUser:" admin and the password "xPassword:" and select OK;
-- when the installation is complete you can delete folder, rm -rf RPi_Cam_Web_Interface.
+- when the installation is complete you can delete folder, rm -rf RPi_Cam_Web_Interface;
+- change the autostart parameter to idle in /etc/raspimjpeg (to disable the automatic start of the camera when starting Raspberry Pi);
 - change the parameters in the browser under Camera Settings to: Load Preset: HD-ready 720p, Rotation: Rotate_270, Preview quality: Quality: 10, Width 1280, Divider: 1, for example picture of RPI Cam interface:
 ![alt text](https://github.com/RobertWojtowicz/rpiroomba/blob/master/pic/08_roomba_RPI_Cam.png)
 
